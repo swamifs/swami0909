@@ -1,0 +1,29 @@
+{
+  "name": "ai-image-generator",
+  "version": "1.0.0",
+  "description": "Production-ready Cloudflare Workers AI Image Generator API using external AI services for image generation and public storage. Returns both base64 and public URLs for generated images.",
+  "main": "worker.js",
+  "scripts": {
+    "dev": "wrangler dev --port 5000",
+    "deploy": "wrangler deploy",
+    "publish": "wrangler deploy --env production",
+    "start": "wrangler dev --port 5000",
+    "test": "echo \"No tests specified\" && exit 0"
+  },
+  "keywords": [
+    "cloudflare-workers",
+    "ai-image-generation",
+    "ai-service",
+    "public-storage",
+    "api",
+    "base64",
+    "public-url",
+    "rapidapi",
+    "serverless"
+  ],
+  "author": "AI Image Generator API",
+  "license": "MIT",
+  "devDependencies": {
+    "wrangler": "^4.40.2"
+  }
+}

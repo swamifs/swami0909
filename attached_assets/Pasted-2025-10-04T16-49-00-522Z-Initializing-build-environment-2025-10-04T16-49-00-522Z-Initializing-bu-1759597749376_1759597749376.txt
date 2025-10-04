@@ -1,0 +1,43 @@
+2025-10-04T16:49:00.522Z	Initializing build environment...
+2025-10-04T16:49:00.522Z	Initializing build environment...
+2025-10-04T16:49:22.536Z	Success: Finished initializing build environment
+2025-10-04T16:49:23.461Z	Cloning repository...
+2025-10-04T16:49:25.620Z	Restoring from dependencies cache
+2025-10-04T16:49:25.624Z	Restoring from build output cache
+2025-10-04T16:49:25.630Z	Detected the following tools from environment: npm@10.9.2, nodejs@22.16.0
+2025-10-04T16:49:26.147Z	Installing project dependencies: npm clean-install --progress=false
+2025-10-04T16:49:37.642Z	
+2025-10-04T16:49:37.642Z	added 53 packages, and audited 54 packages in 11s
+2025-10-04T16:49:37.642Z	
+2025-10-04T16:49:37.642Z	10 packages are looking for funding
+2025-10-04T16:49:37.642Z	  run `npm fund` for details
+2025-10-04T16:49:37.643Z	
+2025-10-04T16:49:37.643Z	found 0 vulnerabilities
+2025-10-04T16:49:37.695Z	Executing user deploy command: npx wrangler deploy
+2025-10-04T16:49:47.361Z	
+2025-10-04T16:49:47.362Z	 ⛅️ wrangler 4.40.2 (update available 4.42.0)
+2025-10-04T16:49:47.362Z	─────────────────────────────────────────────
+2025-10-04T16:49:47.495Z	▲ [WARNING] Failed to match Worker name. Your config file is using the Worker name "ai-image-generator", but the CI system expected "swami". Overriding using the CI provided Worker name. Workers Builds connected builds will attempt to open a pull request to resolve this config name mismatch.
+2025-10-04T16:49:47.500Z	
+2025-10-04T16:49:47.500Z	
+2025-10-04T16:49:50.543Z	Total Upload: 37.47 KiB / gzip: 9.10 KiB
+2025-10-04T16:49:51.889Z	Your Worker has access to the following bindings:
+2025-10-04T16:49:51.889Z	Binding                                                               Resource                  
+2025-10-04T16:49:51.889Z	env.ENVIRONMENT ("production")                                        Environment Variable      
+2025-10-04T16:49:51.889Z	env.AI_SERVICE_URL ("https://image.pollinations.ai")                  Environment Variable      
+2025-10-04T16:49:51.889Z	env.STORAGE_SERVICE_URL ("https://catbox.moe/user/api.php")           Environment Variable      
+2025-10-04T16:49:51.889Z	env.STORAGE_FILES_URL_PREFIX ("https://files.catbox.moe/")            Environment Variable      
+2025-10-04T16:49:51.889Z	
+2025-10-04T16:49:51.891Z	
+2025-10-04T16:49:51.893Z	✘ [ERROR] A request to the Cloudflare API (/accounts/3126216f44295113d3c2db48dc1cc316/workers/scripts/swami/versions) failed.
+2025-10-04T16:49:51.893Z	
+2025-10-04T16:49:51.893Z	  CPU limits are not supported for the Free plan. Switch to a paid plan at https://dash.cloudflare.com/3126216f44295113d3c2db48dc1cc316/workers/plans to set CPU limits. [code: 100328]
+2025-10-04T16:49:51.893Z	  To learn more about this error, visit: https://developers.cloudflare.com/workers/platform/limits/#worker-limits
+2025-10-04T16:49:51.893Z	
+2025-10-04T16:49:51.893Z	  
+2025-10-04T16:49:51.893Z	  If you think this is a bug, please open an issue at: https://github.com/cloudflare/workers-sdk/issues/new/choose
+2025-10-04T16:49:51.893Z	
+2025-10-04T16:49:51.893Z	
+2025-10-04T16:49:51.893Z	
+2025-10-04T16:49:51.893Z	Cloudflare collects anonymous telemetry about your usage of Wrangler. Learn more at https://github.com/cloudflare/workers-sdk/tree/main/packages/wrangler/telemetry.md
+2025-10-04T16:49:52.287Z	Failed: error occurred while running deploy command

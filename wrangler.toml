@@ -1,0 +1,10 @@
+name = "swami"
+main = "worker.js"
+compatibility_date = "2025-07-18"
+compatibility_flags = ["nodejs_compat"]
+
+[vars]
+ENVIRONMENT = "production"
+AI_SERVICE_URL = "https://image.pollinations.ai"
+STORAGE_SERVICE_URL = "https://catbox.moe/user/api.php"
+STORAGE_FILES_URL_PREFIX = "https://files.catbox.moe/"
